@@ -2,7 +2,6 @@
 
 Una aplicación de escritorio moderna para calcular y gestionar remesas internacionales con soporte para múltiples monedas y proveedores P2P.
 
-![Calculadora de Remesas](https://images.pexels.com/photos/4386158/pexels-photo-4386158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
 ## Características
 
