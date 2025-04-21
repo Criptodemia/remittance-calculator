@@ -79,7 +79,3 @@ npm run electron:make
 - Dorado
   - Maker: 0.25%
   - Taker: Tarifas variables según monto
-
-## Licencia
-
-MIT
