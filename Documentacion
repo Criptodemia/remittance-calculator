@@ -1,0 +1,72 @@
+# Guía de Despliegue
+
+## Requisitos Previos
+
+- Node.js 18+
+- npm 9+
+- Git (opcional)
+
+## Entorno de Desarrollo
+
+1. **Instalación de Dependencias**
+   ```bash
+   npm install
+   ```
+
+2. **Desarrollo Local**
+   ```bash
+   npm run electron:dev
+   ```
+
+## Construcción
+
+1. **Preparación**
+   - Verificar versión en `package.json`
+   - Actualizar changelog si existe
+
+2. **Build**
+   ```bash
+   npm run electron:make
+   ```
+
+3. **Ubicación de Archivos**
+   ```
+   out/
+   ├── make/          # Instaladores
+   └── source/        # Código empaquetado
+   ```
+
+## Distribución
+
+### Windows
+- Instalador: `out/make/squirrel.windows/x64/`
+- Formato: `.exe`
+
+### Linux
+- Debian: `out/make/deb/x64/`
+- RPM: `out/make/rpm/x64/`
+
+### macOS
+- ZIP: `out/make/zip/darwin/`
+
+## Verificación
+
+1. **Pruebas Post-Build**
+   - Instalar aplicación
+   - Verificar funcionalidades
+   - Comprobar persistencia
+   - Validar actualizaciones
+
+2. **Checklist**
+   - [ ] Versión correcta
+   - [ ] Instalación limpia
+   - [ ] Funcionalidades principales
+   - [ ] Persistencia de datos
+   - [ ] Desinstalación correcta
+
+## Actualizaciones
+
+- Incrementar versión en `package.json`
+- Documentar cambios
+- Reconstruir aplicación
+- Distribuir nuevos instaladores
